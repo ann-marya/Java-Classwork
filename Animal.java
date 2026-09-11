@@ -1,6 +1,16 @@
-package tutorial6;
+package animalpackage;
 
-public class Animal {
+public abstract class Animal {
 
-    String species = "Dog";
+    String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public abstract void makeSound();
+
+    public void display() {
+        System.out.println("Animal Name: " + name);
+    }
 }
